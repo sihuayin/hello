@@ -44,3 +44,7 @@ jobs:
       - name: build
         run: |
           pnpm run build
+      - name: Deploy 🚀 # 第三步：部署
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # 部署的目录
