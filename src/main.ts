@@ -1,7 +1,6 @@
 import {
   Engine,
   Scene,
-  FreeCamera,
   Vector3,
   HemisphericLight,
   MeshBuilder,
