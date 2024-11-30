@@ -9,7 +9,7 @@ import {
 } from '@babylonjs/core';
 import "./style.css"
 
-const canvas = document.getElementById("renderCanvas") as HTMLCanvasElement;
+const canvas = document.getElementById("renderCanvas") as unknown as HTMLCanvasElement;
 
 // 初始化引擎
 const engine = new Engine(canvas, true);
@@ -48,7 +48,7 @@ const sphere = MeshBuilder.CreateSphere("sphere",
 sphere.position.y = 1;
   
 // 平面
-const ground = MeshBuilder.CreateGround("ground", 
+MeshBuilder.CreateGround("ground", 
   {width: 6, height: 6},
   scene
 );
